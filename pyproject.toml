@@ -1,0 +1,24 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sunil Reddy", email = "psunilreddy@hotmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "azure-ai-projects>=2.5.0",
+    "azure-identity>=1.25.3",
+    "fastapi>=0.141.1",
+    "openai>=3.6.0",
+    "prettyprint>=0.1.5",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+code = "code:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
